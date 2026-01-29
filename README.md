@@ -54,3 +54,18 @@ nest g mo common --no-spec
 yarn add uuid
 yarn add -D @types/uuid
 ```
+
+13. Crear seed
+```bash
+nest g res seed --no-spec
+```
+
+13. Ejecutar Seed
+```bash
+http://localhost:3000/api/seed
+```
+
+14. Instalar Tipos de multer para carga de archivos
+```bash
+yarn add -D @types/multer
+```

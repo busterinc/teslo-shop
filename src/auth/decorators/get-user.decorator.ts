@@ -1,0 +1,16 @@
+import { createParamDecorator, ExecutionContext, InternalServerErrorException } from "@nestjs/common";
+
+
+export const GetUser = createParamDecorator(
+  (data: string, ctx: ExecutionContext) => {
+    // console.log({data})
+
+    const req = ctx.switchToHttp().getRequest();
+    const user = req.user;
+
+    if (!user) throw new InternalServerErrorException('User not found (request)');
+
+    // Si NO mandan data -> regresa todo el usuario. Si mandan data (ej: 'email') -> regresa solo esa propiedad
+    return (!data) ? user : user[data];
+  }
+);

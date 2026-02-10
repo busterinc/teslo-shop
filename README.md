@@ -65,7 +65,50 @@ nest g res seed --no-spec
 http://localhost:3000/api/seed
 ```
 
-14. Instalar Tipos de multer para carga de archivos
+14. Generar nuevo endpoint para los files
+```bash
+nest g res files --no-spec
+```
+
+15. Instalar Tipos de multer para carga de archivos
 ```bash
 yarn add -D @types/multer
 ```
+
+16. Instalar UUID
+```bash
+yarn add uuid
+```
+
+17. Instalar servidor contenido estático
+```bash
+yarn add @nestjs/serve-static
+```
+
+18. Crear nuevo endpoint para el auth
+```bash
+nest g res auth --no-spec 
+```
+
+19. Encriptar
+```bash
+yarn add bcrypt
+yarn add -D @types/bcrypt
+```
+
+20. Se instala passport para JWT
+```bash
+yarn add @nestjs/passport passport
+yarn add @nestjs/jwt passport-jwt
+yarn add -D @types/passport-jwt
+```
+
+21. Generar un Guard
+```bash
+nest g gu auth/guards/userRole --no-spec
+```
+
+
+
+7979711630
+7979711630

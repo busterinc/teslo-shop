@@ -108,6 +108,11 @@ yarn add -D @types/passport-jwt
 nest g gu auth/guards/userRole --no-spec
 ```
 
+22. Paquete para generar documentación
+```bash
+yarn add @nestjs/swagger
+```
+
 
 
 7979711630

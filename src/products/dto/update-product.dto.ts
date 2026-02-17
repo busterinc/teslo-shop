@@ -1,45 +1,46 @@
-import { PartialType } from '@nestjs/mapped-types';
+// import { PartialType } from '@nestjs/mapped-types';
+import { PartialType } from '@nestjs/swagger';
 import { CreateProductDto } from './create-product.dto';
 import { IsArray, IsIn, IsNumber, IsOptional, IsPositive, IsString, Min, MinLength } from 'class-validator';
 
 export class UpdateProductDto extends PartialType(CreateProductDto) {
-    @IsString()
-    @MinLength(1)
-    title: string;
+    // @IsString()
+    // @MinLength(1)
+    // title: string;
 
-    @IsNumber()
-    @IsPositive()
-    @IsOptional()
-    price?: number;
+    // @IsNumber()
+    // @IsPositive()
+    // @IsOptional()
+    // price?: number;
 
-    @IsString()
-    @IsOptional()
-    description?: string;
+    // @IsString()
+    // @IsOptional()
+    // description?: string;
 
-    @IsString()
-    @IsOptional()
-    slug?: string;
+    // @IsString()
+    // @IsOptional()
+    // slug?: string;
 
-    @IsNumber()
-    @Min(0)
-    @IsPositive()
-    @IsOptional()
-    stock?: number;
+    // @IsNumber()
+    // @Min(0)
+    // @IsPositive()
+    // @IsOptional()
+    // stock?: number;
 
-    @IsString({ each: true })
-    @IsArray()
-    sizes: string[];
+    // @IsString({ each: true })
+    // @IsArray()
+    // sizes: string[];
 
-    @IsIn(['men', 'women', 'kid', 'unisex'])
-    gender: string;
+    // @IsIn(['men', 'women', 'kid', 'unisex'])
+    // gender: string;
 
-    @IsString({ each: true })
-    @IsArray()
-    @IsOptional()
-    tags?: string[];
+    // @IsString({ each: true })
+    // @IsArray()
+    // @IsOptional()
+    // tags?: string[];
 
-    @IsString({ each: true })
-    @IsArray()
-    @IsOptional()
-    images?: string[];
+    // @IsString({ each: true })
+    // @IsArray()
+    // @IsOptional()
+    // images?: string[];
 }

@@ -113,7 +113,13 @@ nest g gu auth/guards/userRole --no-spec
 yarn add @nestjs/swagger
 ```
 
+23. Crear web socket
+```bash
+nest g res messagesWs --no-spec
+```
 
-
-7979711630
-7979711630
+24. Instalar web sockets
+```bash
+yarn add @nestjs/websockets @nestjs/platform-socket.io
+yarn add socket.io
+```
